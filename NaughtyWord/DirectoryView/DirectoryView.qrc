@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/DirectoryView">
+        <file>DirectoryView.qml</file>
+        <file>DirectoryViewController.qml</file>
+        <file>DirectoryModel.qml</file>
+    </qresource>
+</RCC>

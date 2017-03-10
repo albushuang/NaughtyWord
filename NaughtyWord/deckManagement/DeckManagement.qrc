@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/deckManagement">
+        <file>DeckManagementView.qml</file>
+        <file>constants.js</file>
+        <file>DeckManagementController.qml</file>
+        <file>DecksView.qml</file>
+        <file>DecksController.qml</file>
+        <file>decksViewConst.js</file>
+        <file>DecksModel.qml</file>
+        <file>OneDeckViewController.qml</file>
+        <file>UpdateImageController.qml</file>
+        <file>DeckManagementModel.qml</file>
+        <file>AnkiPackageController.qml</file>
+        <file>AnkiView.qml</file>
+        <file>AnkiViewController.qml</file>
+        <file>OneDeckRelookup.qml</file>
+        <file>AutoDict.qml</file>
+        <file>DummyFields.qml</file>
+    </qresource>
+</RCC>

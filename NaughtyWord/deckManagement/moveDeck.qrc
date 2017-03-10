@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/MoveDeck">
+        <file>MoveDeckBtn.qml</file>
+        <file>TargetController.qml</file>
+    </qresource>
+</RCC>

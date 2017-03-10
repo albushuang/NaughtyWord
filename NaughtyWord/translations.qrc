@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>translations/NaughtyWord_en.qm</file>
+        <file>translations/NaughtyWord_sc.qm</file>
+        <file>translations/NaughtyWord_tc.qm</file>
+    </qresource>
+</RCC>

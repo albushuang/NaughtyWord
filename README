@@ -1,0 +1,65 @@
+
+If there is anything which is not compliant to LGPL v3 or any suggestion, please kindly note me by email: albushuang@gmail.com
+
+######################################################
+
+Preparing compiling environment
+
+1. 	Please provide your own key from thesaurus.altervista.org
+	You should export ENV_SYN_KEY1, ENV_SYN_KEY2, ENV_SYN_KEY3, ENV_SYN_KEY4 before running make utility.
+	ex:
+		ENV_SYN_KEY1=m8bz9cEuvHFB6nNh3Nyl and etc.
+
+2. 	Please provide your own google cloud api key and secret
+	You should export ENV_GGCLIENTID and ENV_GGSECRET before running make utility.
+	ex:
+		ENV_GGCLIENTID=902066663333-6oa2v3g12vnnj3uvcub9fu11vjdp2h4s.apps.googleusercontent.com
+		ENV_GGSECRET=KAS225usQn0TMyKKlE2QMk6G
+
+3. 	For storing scores and user behaviors, please provide your own firebare path by exporting ENV_FIREBASEURL before running make.
+	ex:
+		ENV_FIREBASEURL=radiant-inferno-2026.firebaseio.com
+
+
+If you are running Qt Creator by Mac application launcher, make sure set environment variables for it.
+	ex: 
+		launchctl setenv ENV_SYN_KEY1 m8bz9cEuvHFB6nNh3Nyl and etc.
+
+
+Test devices (cell phone or tablet)
+
+1. 	In GrandPa.qml, device ID is preserved for google admob, but the currently google admob does not work:
+
+        if(Qt.platform.os=="android") { unitID = "ca-app-pub-1482222222222222/8888555555" }
+        else { unitID = "ca-app-pub-1482222222222222/1666666688" }
+
+2. 	In main.qml, device ID is provided by 
+	
+		adinitRewardedVideoAd(["EE000000000000000000000000000003", "9900000000000000000000000000000A"])
+
+3. Make sure your provide your own device ID to comply to Google admob policy.
+
+
+Preparing rcc
+		
+	Make sure these rcc are located in path: NaughtyWord/rcc. Make rcc files by:
+
+		rcc -binary some_file.qrc -o some_file.rcc
+	
+1. ditionaries.rcc is made by dictionaries.qrc
+2. musics.rcc is made by musics.qrc
+3. pic.rcc is made by pic.qrc
+4. decks.rcc is made by decks.qrc
+
+
+Copy rights of bundled libraries
+Although all libraries are bundled in this project, but I do not own them. These modules will be move to submodules in future works.
+1. Box2D is an open source C++ physics engine for simulating collisions and other 2D motions of rigid bodies which can be easily integrated with Qt. The main developer of Box2D is Erin Catto and it is distributed under the zlib license.
+2. ijgjpeg belongs to The Independent JPEG Group.
+3. jsonpath belongs to Stefan Goessner (goessner.net), licensed under the MIT (MIT-LICENSE.txt) licence.
+4. bzip belongs to Julian Seward.
+5. quazip is from http://quazip.sourceforge.net/
+6. Qt quazip project is from https://github.com/mnafees/quazip
+7. mpg123 is from https://www.mpg123.de/
+8. qtdropbox is from https://github.com/lycis/QtDropbox
+

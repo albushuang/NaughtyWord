@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/DictLookup">
+        <file>DictLookupView.qml</file>
+        <file>DictLookupController.qml</file>
+        <file>DictLookupModel.qml</file>
+        <file>gdicts.js</file>
+        <file>googleImage.js</file>
+        <file>SynonymView.qml</file>
+        <file>SaveAWordController.qml</file>
+        <file>SaveAWordModel.qml</file>
+        <file>SynonymController.qml</file>
+        <file>SynonymModel.qml</file>
+        <file>ImageBrowserController.qml</file>
+        <file>ImageSearcher.qml</file>
+        <file>wiktionary.js</file>
+        <file>NotesPaser.qml</file>
+        <file>com/ToolBar.qml</file>
+        <file>com/ImgButton.qml</file>
+        <file>com/ImgButton2Function.qml</file>
+        <file>com/AudioBar.qml</file>
+        <file>com/DictToolBar.qml</file>
+        <file>DictLookupTutor.qml</file>
+        <file>pic/iconDPurple.png</file>
+        <file>pic/iconPronounce.png</file>
+        <file>pic/iconRed.png</file>
+        <file>pic/iconYellow.png</file>
+        <file>pic/iconGreen.png</file>
+        <file>com/IconText.qml</file>
+        <file>SearchSpeech.qml</file>
+        <file>Sim2Tradition.qml</file>
+        <file>vocabularyServer.js</file>
+    </qresource>
+</RCC>

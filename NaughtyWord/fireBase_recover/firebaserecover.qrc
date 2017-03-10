@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/fireBase_recover">
+        <file>FirebaseRecover.qml</file>
+    </qresource>
+</RCC>

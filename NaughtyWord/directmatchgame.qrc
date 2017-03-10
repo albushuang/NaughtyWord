@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>directMatchGame/DirectMatchGameHost.qml</file>
+        <file>directMatchGame/DirectMatchGameView.qml</file>
+        <file>directMatchGame/DirectMatchGameViewController.qml</file>
+        <file>directMatchGame/ModelSettingsInDirectMatchGame.js</file>
+        <file>directMatchGame/ViewSettingsInDirectMatchGame.js</file>
+        <file>directMatchGame/settingValues.js</file>
+        <file>directMatchGame/DirectMatchGameSettings.qml</file>
+        <file>directMatchGame/DirectMatchGameSettingViewController.qml</file>
+    </qresource>
+</RCC>

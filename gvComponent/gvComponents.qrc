@@ -1,0 +1,15 @@
+<RCC>
+    <qresource prefix="/gvComponent">
+        <file>GvStackView.qml</file>
+        <file>GvFlickEditor.qml</file>
+        <file>GvTextFocus.qml</file>
+        <file>DeckMedia.qml</file>
+        <file>PackMedia.qml</file>
+        <file>FadingMessage.qml</file>
+        <file>objectCreate.js</file>
+        <file>tools.js</file>
+        <file>GvFlipable.qml</file>
+        <file>CenterText.qml</file>
+        <file>AnkiOps.qml</file>
+    </qresource>
+</RCC>

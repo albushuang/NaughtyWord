@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/serverAPI">
+        <file>firebaseAPI.js</file>
+    </qresource>
+</RCC>

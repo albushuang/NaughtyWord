@@ -1,0 +1,175 @@
+<RCC>
+    <qresource prefix="/pic">
+        <file>finger_print_US.png</file>
+        <file>scoreTableHeader.png</file>
+        <file>scoreTableItem.png</file>
+        <file>background0.png</file>
+        <file>exit_to_app_48dp.png</file>
+        <file>cloudDrive_folder.png</file>
+        <file>cloudDrive_file.png</file>
+        <file>popup_bg.png</file>
+        <file>notSupported.png</file>
+        <file>insanity_store_back icon.png</file>
+        <file>insanity_store_BG.png</file>
+        <file>insanity_store_diamond number.png</file>
+        <file>insanity_store_gravity_bar.png</file>
+        <file>insanity_store_gravity_level frame01.png</file>
+        <file>insanity_store_gravity_level frame02.png</file>
+        <file>insanity_store_invisible_bar.png</file>
+        <file>insanity_store_invisible_level frame01.png</file>
+        <file>insanity_store_invisible_level frame02.png</file>
+        <file>insanity_store_redBull_bar.png</file>
+        <file>insanity_store_redBull_level frame01.png</file>
+        <file>insanity_store_redBull_level frame02.png</file>
+        <file>insanity_store_show number area.png</file>
+        <file>insanity_store_shrinker_bar.png</file>
+        <file>insanity_store_shrinker_level frame01.png</file>
+        <file>insanity_store_shrinker_level frame02.png</file>
+        <file>insanity_store_smart_bar.png</file>
+        <file>insanity_store_smart_level frame01.png</file>
+        <file>insanity_store_smart_level frame02.png</file>
+        <file>insanity_store_star number.png</file>
+        <file>insanity_store_teacher_bar.png</file>
+        <file>insanity_store_teacher_level frame01.png</file>
+        <file>insanity_store_teacher_level frame02.png</file>
+        <file>dictView_arrowLeft.png</file>
+        <file>dictView_arrowRight.png</file>
+        <file>dictView_background.png</file>
+        <file>dictView_blueFrame.png</file>
+        <file>dictView_grass.png</file>
+        <file>dictView_iconClose.png</file>
+        <file>dictView_lizard.png</file>
+        <file>dictView_searchBar.png</file>
+        <file>dictView_speech1.png</file>
+        <file>dictView_speech2.png</file>
+        <file>dictView_speech3.png</file>
+        <file>gameSelect_whiteMenu.png</file>
+        <file>iconCancel.png</file>
+        <file>dictSearchSymbol.png</file>
+        <file>Back icon.png</file>
+        <file>buttonOK.png</file>
+        <file>cardback1.png</file>
+        <file>cardfront2.png</file>
+        <file>deckManagement_BG with graphics.png</file>
+        <file>deckManagement_cloud icon.png</file>
+        <file>deckManagement_entertainment icon.png</file>
+        <file>deckManagement_leave icon.png</file>
+        <file>deckManagement_living icon.png</file>
+        <file>deckManagement_profession icon.png</file>
+        <file>deckManagement_record icon.png</file>
+        <file>deckManagement_school icon.png</file>
+        <file>deckManagement_test icon.png</file>
+        <file>deckManagement_travel icon.png</file>
+        <file>decksView_entertainment.png</file>
+        <file>decksView_life.png</file>
+        <file>decksView_profession.png</file>
+        <file>decksView_record.png</file>
+        <file>decksView_school.png</file>
+        <file>decksView_test.png</file>
+        <file>decksView_travel.png</file>
+        <file>decksView_white area.png</file>
+        <file>decksView_white line.png</file>
+        <file>dictManagerView.png</file>
+        <file>directMatchGame_ BG color layer_Blue strip.png</file>
+        <file>directMatchGame_ BG color layer_Dark Green area.png</file>
+        <file>directMatchGame_ BG color layer.png</file>
+        <file>directMatchGame_ score bar.png</file>
+        <file>directMatchGame_ Time running bar.png</file>
+        <file>GameFlipMatch_pink score bar.png</file>
+        <file>gameSelect_blackFrame.png</file>
+        <file>gameSelect_diamond.png</file>
+        <file>gameSelect_orangeFrame.png</file>
+        <file>gameSelect_orangeMenu.png</file>
+        <file>gameSelect_owl.png</file>
+        <file>gameSelect_purpleFrame.png</file>
+        <file>gameSelect_purpleMenu.png</file>
+        <file>gameSelect_whiteBar.png</file>
+        <file>gameSelect_yellowFrame.png</file>
+        <file>gameSelect_yellowMenu.png</file>
+        <file>gameSelectDeck_Entertainment item.png</file>
+        <file>gameSelectDeck_Entertainment01.png</file>
+        <file>gameSelectDeck_Entertainment02.png</file>
+        <file>gameSelectDeck_Life item.png</file>
+        <file>gameSelectDeck_Life01.png</file>
+        <file>gameSelectDeck_Life02.png</file>
+        <file>gameSelectDeck_Manu arrow.png</file>
+        <file>gameSelectDeck_Manu blue area.png</file>
+        <file>gameSelectDeck_Manu label.png</file>
+        <file>gameSelectDeck_Profession item.png</file>
+        <file>gameSelectDeck_Profession01.png</file>
+        <file>gameSelectDeck_Profession02.png</file>
+        <file>gameSelectDeck_School item.png</file>
+        <file>gameSelectDeck_School01.png</file>
+        <file>gameSelectDeck_School02.png</file>
+        <file>gameSelectDeck_Separate line.png</file>
+        <file>gameSelectDeck_Test item.png</file>
+        <file>gameSelectDeck_Test01.png</file>
+        <file>gameSelectDeck_Test02.png</file>
+        <file>gameSelectDeck_Travel item.png</file>
+        <file>gameSelectDeck_Travel01.png</file>
+        <file>gameSelectDeck_Travel02.png</file>
+        <file>insanity_ability_frame.png</file>
+        <file>insanity_Alice( with bubble).png</file>
+        <file>insanity_AliceEye.png</file>
+        <file>insanity_background.png</file>
+        <file>insanity_gravity_icon.png</file>
+        <file>insanity_invisible_icon.png</file>
+        <file>insanity_photo frame (white).png</file>
+        <file>insanity_photo frame (yellow).png</file>
+        <file>insanity_redBull_icon.png</file>
+        <file>insanity_rock01.png</file>
+        <file>insanity_rock02.png</file>
+        <file>insanity_rock03.png</file>
+        <file>insanity_rock04.png</file>
+        <file>insanity_shrinker_icon.png</file>
+        <file>insanity_smart_icon.png</file>
+        <file>insanity_Star.png</file>
+        <file>insanity_teacher_icon.png</file>
+        <file>mainPage_diamond.png</file>
+        <file>mainPage_grass.png</file>
+        <file>mainPage_leg1.png</file>
+        <file>mainPage_leg2.png</file>
+        <file>mainPage_leg3.png</file>
+        <file>mainPage_lizard.png</file>
+        <file>NW_Setting_Blue bar.png</file>
+        <file>NW_Setting_Blue cursor.png</file>
+        <file>NW_Setting_Brown bar.png</file>
+        <file>NW_Setting_Brown cursor.png</file>
+        <file>NW_Setting_down grass.png</file>
+        <file>NW_Setting_Green bar.png</file>
+        <file>NW_Setting_Green cursor.png</file>
+        <file>NW_Setting_Red bar.png</file>
+        <file>NW_Setting_Red cursor.png</file>
+        <file>NW_Setting_up grass.png</file>
+        <file>NW_Setting_White frame BG.png</file>
+        <file>scoreBack.png</file>
+        <file>scoreBG.png</file>
+        <file>scoreInfoBar.png</file>
+        <file>scorePlayAgain.png</file>
+        <file>scoreSnake.png</file>
+        <file>scoreTitle.png</file>
+        <file>horizontalLizard.png</file>
+        <file>ladderBlue.png</file>
+        <file>tutorial.png</file>
+        <file>Practice_arrow.png</file>
+        <file>Practice_center.png</file>
+        <file>Practice_Remain Blue bar.png</file>
+        <file>Practice_speaker.png</file>
+        <file>Practice_top image.png</file>
+        <file>Practice_move dot.png</file>
+        <file>NW_GamePage_Deck bg_Line.png</file>
+        <file>NW_GamePage_Deck bg_plain.png</file>
+        <file>NW_GamePage_Deck bg.png</file>
+        <file>NW_GamePage_deck button.png</file>
+        <file>NW_GamePage_Diamond.png</file>
+        <file>NW_GamePage_Orange option.png</file>
+        <file>NW_GamePage_purple option.png</file>
+        <file>NW_GamePage_top image.png</file>
+        <file>NW_GamePage_yellow option.png</file>
+        <file>insanity_store_back icon colored.png</file>
+        <file>NW_GamePage_Exist option.png</file>
+        <file>dictView_speechIndex.png</file>
+        <file>alient finger01.png</file>
+        <file>alient finger02.png</file>
+    </qresource>
+</RCC>

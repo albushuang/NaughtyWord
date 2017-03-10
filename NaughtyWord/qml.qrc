@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>generalJS/appsettingKeys.js</file>
+        <file>generalJS/objectCreate.js</file>
+        <file>generalJS/tutorialScript.js</file>
+        <file>generalModel/UserSettings.qml</file>
+        <file>generalModel/NWRadioBtnSettings.qml</file>
+        <file>generalJS/character.js</file>
+        <file>generalJS/deckCategoryConsts.js</file>
+        <file>generalJS/generalConstants.js</file>
+        <file>controllers/Downloader.qml</file>
+        <file>generalModel/chevron_right_blue.png</file>
+        <file>generalModel/chevron_right_brown.png</file>
+        <file>generalModel/chevron_right_green.png</file>
+        <file>generalModel/chevron_right_red.png</file>
+        <file>generalJS/chooseDeck.js</file>
+        <file>generalJS/usageServer.js</file>
+        <file>generalJS/synonymAntonymHandler.js</file>
+        <file>generalModel/DefinitionVendor.qml</file>
+    </qresource>
+</RCC>

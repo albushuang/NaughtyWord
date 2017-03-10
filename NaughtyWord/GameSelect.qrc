@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>GameSelect/GameSelectView.qml</file>
+        <file>GameSelect/GameSelectController.qml</file>
+        <file>GameSelect/GameSelectModel.js</file>
+        <file>GameSelect/DeckSelectView.qml</file>
+        <file>GameSelect/DeckSelectController.qml</file>
+        <file>GameSelect/DeckSelectSettings.qml</file>
+        <file>GameSelect/DeckSelectModel.qml</file>
+        <file>GameSelect/viewConsts.js</file>
+        <file>GameSelect/StudyInfoModel.qml</file>
+        <file>GameTOEICBattle/GrandPa.qml</file>
+    </qresource>
+</RCC>

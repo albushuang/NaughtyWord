@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/MainPage">
+        <file>MainPageView.qml</file>
+        <file>MainPageController.qml</file>
+        <file>EngineeringSetting.qml</file>
+        <file>About.qml</file>
+        <file>Settings.qml</file>
+        <file>ServiceTerms.qml</file>
+        <file>InitDecks.qml</file>
+    </qresource>
+</RCC>

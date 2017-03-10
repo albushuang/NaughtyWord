@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/musics">
+        <file>move01.wav</file>
+        <file>Hammock_Fight.mp3</file>
+        <file>Magic Chime.mp3</file>
+        <file>Barroom_Ballet_Silent_Film_Light.mp3</file>
+        <file>Breaktime_Silent_Film_Light.mp3</file>
+        <file>Kool_Kats.mp3</file>
+        <file>Rainy_Day_Games.mp3</file>
+        <file>Rauchus.mp3</file>
+        <file>win.mp3</file>
+        <file>lost.mp3</file>
+        <file>bet.mp3</file>
+        <file>correct.mp3</file>
+        <file>wrong.mp3</file>
+        <file>cash-register-purchase.mp3</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,26 @@
+<RCC>
+    <qresource prefix="/">
+        <file>../../UIControls/ColoredTextInput.qml</file>
+        <file>../../UIControls/ImageBrowser.qml</file>
+        <file>../../UIControls/SuggestionWindow.qml</file>
+        <file>../../UIControls/AutoImage.qml</file>
+        <file>../../UIControls/PleaseWait.qml</file>
+        <file>../../UIControls/FloatWindow.qml</file>
+        <file>../../UIControls/Tutorial.qml</file>
+        <file>../../UIControls/ErrorAlert.qml</file>
+        <file>../../UIControls/BezierAnimation.qml</file>
+        <file>../../UIControls/Card.qml</file>
+        <file>../../UIControls/MoveAnimation.qml</file>
+        <file>../../UIControls/PopUpMenu.qml</file>
+        <file>../../UIControls/BrowseControl.qml</file>
+        <file>../../UIControls/GooglePublicLinkDownloader.qml</file>
+        <file>../../UIControls/MultiButtons.qml</file>
+        <file>../../UIControls/ImageBrowser2.qml</file>
+        <file>../../UIControls/DragMouse.qml</file>
+        <file>../../UIControls/CropFrame2.qml</file>
+        <file>../../UIControls/RunningText.qml</file>
+        <file>../../UIControls/ButtonNavi.qml</file>
+        <file>../../UIControls/FlickableText.qml</file>
+        <file>../../UIControls/ColoredTextInput2.qml</file>
+    </qresource>
+</RCC>

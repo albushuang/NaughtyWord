@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/ScoreView">
+        <file>ScoreView.qml</file>
+        <file>ScoreViewController.qml</file>
+        <file>gameDbHandler.js</file>
+        <file>gameScoreServer.js</file>
+        <file>scoreConsts.js</file>
+        <file>tab0.png</file>
+        <file>tab1.png</file>
+        <file>tab2.png</file>
+    </qresource>
+</RCC>

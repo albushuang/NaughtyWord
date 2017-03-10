@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/GamePractice">
+        <file>ArrowSign.qml</file>
+        <file>LingoPracticeModel.qml</file>
+        <file>LingoPracticeView.qml</file>
+        <file>LingoPracticeViewController.qml</file>
+        <file>ModelSettingsInLingoPractice.js</file>
+        <file>ViewSettingsInLingoPractice.js</file>
+        <file>LingoPracticeSettings.qml</file>
+        <file>SuperMemoAlgorithm.js</file>
+    </qresource>
+</RCC>

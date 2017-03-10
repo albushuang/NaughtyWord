@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>pageOption/option2.png</file>
+        <file>pageOption/option3.png</file>
+        <file>pageOption/option4.png</file>
+        <file>cloud.png</file>
+        <file>finger.png</file>
+        <file>SpeakerOn.png</file>
+        <file>dictView_blueFrame2.png</file>
+        <file>gameSelect_white arrow.png</file>
+        <file>scoreTitleSlim.png</file>
+        <file>not_Authorized_1.png</file>
+        <file>not_Authorized_2.png</file>
+        <file>not_Authorized_3.png</file>
+        <file>not_Authorized_4.png</file>
+        <file>wrong_red.png</file>
+        <file>correct_green.png</file>
+        <file>correct_circle_green.png</file>
+        <file>simpleWheel.png</file>
+        <file>wheelWithContent.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/NWUIControls">
+        <file>NWPopupMenu.qml</file>
+        <file>NWOptions.qml</file>
+        <file>NWPleaseWait.qml</file>
+        <file>ReminderWithTimer.qml</file>
+        <file>NWTutorial.qml</file>
+        <file>crown.png</file>
+        <file>DragMouseAndHint.qml</file>
+        <file>BrowseAllow.qml</file>
+    </qresource>
+</RCC>

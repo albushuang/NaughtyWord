@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/CloudDrive">
+        <file>CloudView.qml</file>
+        <file>CloudViewController.qml</file>
+        <file>LogInView.qml</file>
+        <file>CloudConst.js</file>
+        <file>googleApi.js</file>
+        <file>CloudDriveSettings.qml</file>
+        <file>CloudModel.qml</file>
+        <file>cloudBottomButton.png</file>
+        <file>cloudTopButton.png</file>
+    </qresource>
+</RCC>

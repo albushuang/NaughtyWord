@@ -1,0 +1,18 @@
+<RCC>
+    <qresource prefix="/NWDialog">
+        <file>NWDialog.qml</file>
+        <file>NWDialogControl.qml</file>
+        <file>pic/bgInteract.png</file>
+        <file>pic/bgMessage.png</file>
+        <file>pic/bgTitle.png</file>
+        <file>pic/titlebar.png</file>
+        <file>pic/btnOneCancel.png</file>
+        <file>pic/btnOneConfirm.png</file>
+        <file>pic/btnNo.png</file>
+        <file>pic/btnYes.png</file>
+        <file>pic/inputbar.png</file>
+        <file>com/TextFieldWithPic.qml</file>
+        <file>pic/inputBarS.png</file>
+        <file>com/InputAndButtons.qml</file>
+    </qresource>
+</RCC>

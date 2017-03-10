@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/dictionary">
+        <file>cedict.lib</file>
+        <file>gdicts.idx</file>
+    </qresource>
+</RCC>

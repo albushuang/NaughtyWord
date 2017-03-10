@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/Dialogue">
+        <file>Dialogue.qml</file>
+        <file>DialogueController.qml</file>
+    </qresource>
+</RCC>

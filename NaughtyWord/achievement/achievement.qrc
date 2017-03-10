@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/achievement">
+        <file>AchievementController.qml</file>
+        <file>AchievementView.qml</file>
+        <file>achievementScript.js</file>
+    </qresource>
+</RCC>

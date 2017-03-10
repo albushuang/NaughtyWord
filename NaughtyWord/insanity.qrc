@@ -1,0 +1,16 @@
+<RCC>
+    <qresource prefix="/">
+        <file>GameInsanity/Choice.qml</file>
+        <file>GameInsanity/InsanityGameHost.qml</file>
+        <file>GameInsanity/InsanityView.qml</file>
+        <file>GameInsanity/InsanityViewController.qml</file>
+        <file>GameInsanity/ModelSettingsInInsanity.js</file>
+        <file>GameInsanity/Obstacle.qml</file>
+        <file>GameInsanity/PowerUpAnimation.qml</file>
+        <file>GameInsanity/ScreenBoundaries.qml</file>
+        <file>GameInsanity/InsanitySettings.qml</file>
+        <file>GameInsanity/settingValues.js</file>
+        <file>GameInsanity/InsanitySettingViewController.qml</file>
+        <file>GameInsanity/InsanityStore.qml</file>
+    </qresource>
+</RCC>
