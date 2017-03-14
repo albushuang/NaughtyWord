@@ -10,6 +10,9 @@ DEFINES += GGCLIENTID=\\\"$(ENV_GGCLIENTID)\\\"
 DEFINES += GGSECRET=\\\"$(ENV_GGSECRET)\\\"
 DEFINES += FIREBASEURL=\\\"$(ENV_FIREBASEURL)\\\"
 
+#DEFINES ''= QMLJSDEBUGGER
+#DEFINES''= QT_DECLARATIVE_DEBUG
+
 !osx:qtHaveModule(webengine) {
         QT += webengine
         DEFINES += QT_WEBVIEW_WEBENGINE_BACKEND
@@ -126,6 +129,11 @@ RESOURCES += qml.qrc \
     deckManagement/moveDeck.qrc \
     fireBase_recover/firebaserecover.qrc \
 
+#    GameTOEICBattle/gamestage.qrc \
+#    GameTOEICBattle/gametoeicbattle.qrc \
+#    GameFlipMatch/gameflipmatch.qrc\
+#    wordShuffle/wordshuffle.qrc \
+#    achievement/achievement.qrc \
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 # Order: Submodule in order of the first letter goes first,
@@ -138,12 +146,13 @@ QML_IMPORT_PATH += $$PWD/../box2DQml $$PWD/../dropboxLib $$PWD/../JSONListModel 
                    $$PWD/GameInsanity $$PWD/GamePractice $$PWD/GameSelect \
                    $$PWD/generalJS $$PWD/generalModel $$PWD/headers $$PWD/imageVendor $$PWD/ios $$PWD/macx \
                    $$PWD/MainPage $$PWD/musics $$PWD/NWUIControls $$PWD/pic $$PWD/ScoreView $$PWD/NWDialog/com \
-                   $$PWD/sDictLookup $$PWD/searchSpeech $$PWD/views  $$PWD/wordSpeaker \
+                   $$PWD/sDictLookup $$PWD/searchSpeech $$PWD/wordSpeaker \
                    $$PWD/deckDownloader
 
+#$$PWD/GameTOEICBattle $$PWD/GameFlipMatch $$PWD/wordShuffle
 
 ios {
-    QMAKE_MAC_SDK = iphoneos
+    QMAKE_MAC_SDK = iphoneos9.3
     QMAKE_INFO_PLIST = ios/Info.plist
     ios_icon.files = $$files($$PWD/ios/icons/iconNaughtyWord_*.png)
     QMAKE_BUNDLE_DATA += ios_icon
@@ -166,6 +175,8 @@ ios {
 }
 
 macx {
+# if any library is not found, execute:
+#    install_name_tool -change libmp3PlayerMacxRelease.1.dylib "@loader_path/libmp3PlayerMacxRelease.1.dylib" NaughtyWord
     QMAKE_MAC_SDK = macosx10.12
     rccfiles.files = $$PWD/rcc/decks.rcc $$PWD/rcc/musics.rcc $$PWD/rcc/dictionaries.rcc $$PWD/rcc/pic.rcc
     rccfiles.path = qrc
@@ -178,9 +189,12 @@ macx {
     JPEGCODEC = $$join(JPEGCODEC,,,Macx)
     LIBS += -lz
     DEFINES += PLATFORM_MACX EG_NOSTDLIB
+    ICON = macx/NaughtyWord.icns
 }
 
 android {
+    #resource file under obb will be rename to *.obb, ex: main.1134007001.com.glovisdom.NaughtyWord after uploaded,
+    # it becomes main.1134007001.com.glovisdom.NaughtyWord.obb. This is important for doing local obb test.
     QT += androidextras
     RESOURCES += pic/pic.qrc
     LIBS += -lz
@@ -217,7 +231,7 @@ android {
     ANDROIDLIB =  $$join(ANDROIDLIB,,,libImmEndpointWarpJ.so)
     #ANDROIDLIB =  $$join(ANDROIDLIB,,,.so)
     #EXTRA_QUAZIP_LIB = $$ANDROIDLIB
-    ANDROID_EXTRA_LIBS = $$ANDROIDLIB
+    #ANDROID_EXTRA_LIBS = $$ANDROIDLIB
 
     DISTFILES += \
         android/AndroidManifest.xml \
@@ -227,9 +241,24 @@ android {
         android/build.gradle \
         android/gradle/wrapper/gradle-wrapper.properties \
         android/gradlew.bat \
-        $$ANDROID_PACKAGE_SOURCE_DIR/src/com/glovisdom/GvQtRewardVideoAd/GvQtRewardVideoAdActivity.java # this is a window, so ...
+        $$ANDROID_PACKAGE_SOURCE_DIR/src/com/glovisdom/NaughtyWord/GvQtRewardVideoAdActivity.java # this is a window, so ...
+
+#        GameSelect/viewConsts.js \
+#        GameSelect/StudyInfoModel.qml \
+#        GameTOEICBattle/SettingValues.java
 }
 
+#win32 {
+#    BZLIB = $$join(BZLIB,,,Win32)
+#    QUAZIPLIB = $$join(QUAZIPLIB,,,Win32)
+#    BOX2DLIB = $$join(BOX2DLIB,,,Win32)
+#    MP3LIB = $$join(MP3LIB,,,Win32)
+#    LIBS += -lzlib -L$$PWD/../library/win32/lib -llibmpg123-0
+#    INCLUDEPATH += $$PWD/../library/win32/inc
+#    DEF_FILE = $$PWD/../library/win32/lib/libmpg123-0.def
+#    QMAKE_LFLAGS += /DEF:$$DEF_FILE
+#    RESOURCES += decks.qrc
+#}
 
 
 CONFIG(debug, debug|release) {
@@ -247,11 +276,12 @@ CONFIG(release, debug|release) {
     QUAZIPLIB = $$join(QUAZIPLIB,,,Release)
     MP3LIB = $$join(MP3LIB,,,Release)
     JPEGCODEC = $$join(JPEGCODEC,,,Release)
+    #macx: DEFINES += MAC_OS_RELEASE
 }
 DEP = lib
 DEP = $$join(DEP,,,$$MP3LIB)
 DEP = $$join(DEP,,,.a)
-PRE_TARGETDEPS += $$OUT_PWD/../mp3Player/$$DEP
+#PRE_TARGETDEPS += $$OUT_PWD/../mp3Player/$$DEP
 LIBS += -l$$MP3LIB -l$$BOX2DLIB -l$$JPEGCODEC -l$$BZLIB -l$$QUAZIPLIB
 #_______________translation start___________________________
 # step 1: lupdate this ".pro" file (-noobsolete)
@@ -366,5 +396,5 @@ HEADERS += \
     ../DefVendor/DefVendor.h
 
 
-DEPENDPATH += $$PWD/../mp3Player
+#DEPENDPATH += $$PWD/../mp3Player
 

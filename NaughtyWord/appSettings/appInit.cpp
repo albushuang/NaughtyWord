@@ -143,7 +143,9 @@ void getAndroidPaths(QString &source, QString &target) {
     QAndroidJniObject activity = QAndroidJniObject::callStaticObjectMethod("org/qtproject/qt5/android/QtNative", "activity", "()Landroid/app/Activity;");
     QAndroidJniObject package = activity.callObjectMethod("getPackageName", "()Ljava/lang/String;");
 
+    // ex: /storage/emulated/0/Documents
     target = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+    // ex: /storage/emulated/0/Android/obb/com.glovisdom.NaughtyWord
     source = mediaPath.toString()+"/Android/obb/"+package.toString();
 
     QAndroidJniEnvironment env; // Don't know what this is for ?
@@ -153,7 +155,6 @@ void getAndroidPaths(QString &source, QString &target) {
 QString AppInit::prepareQRC() {
     QString path, destPath;
     getAndroidPaths(path, destPath);
-
     QString obb = getObbFile(path);
 
     if(!obb.isEmpty()) {

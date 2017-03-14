@@ -187,7 +187,7 @@ void DictLookUp::seekDictionaryFile(QFile *file){
         int index2 = m_searchKey.toUpper()[1].cell() - 'A';
         fileOffset = dictOffsets[letter].letter;
 
-        if (m_searchKey[1] == '\0') { }
+        if (m_searchKey[1] == QChar('\0')) { }
         else if (index2>=0 && index2 <=25) fileOffset += dictOffsets[letter].offsets[index2];
     }
     file->seek(fileOffset);
