@@ -153,6 +153,7 @@ Item{id: lingoPracticeViewController
         showingFront = true
         myMainView.questionBlock.word = practiceHost.currCard.word
         myMainView.questionBlock.phonicAlphabet = Qt.atob(practiceHost.currCard.pa)
+        myMainView.questionBlock.speechFile = practiceHost.currCard.speech
         myMainView.questionBlock.imageUrl = ""
         myMainView.questionBlock.translation = ""
         myMainView.numberOfChoice = 1

@@ -62,6 +62,7 @@ Rectangle{
         property string phonicAlphabet
         property string imageUrl
         property string translation
+        property string speechFile
 
         Rectangle{id: line1; width: parent.width; height:4*vRatio; color:"#336699"
         }
@@ -110,7 +111,7 @@ Rectangle{
                 source : "qrc:/pic/Practice_speaker.png"
                 anchors { left: parent.left;rightMargin: 20*hRatio; top: paText.top }
                 width: height; height: paText.height
-                visible: questionBlock.phonicAlphabet != ""
+                visible: questionBlock.speechFile != ""
                 MouseArea {
                     anchors.fill: parent; z:1
                     onClicked: phonicAlphabetArea.speechClicked()
