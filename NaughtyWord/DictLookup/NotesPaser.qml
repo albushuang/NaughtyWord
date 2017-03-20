@@ -12,6 +12,7 @@ Item {
         readonly property int idStartWithType: 3
         readonly property int idDummyNote: 4
         readonly property int idStartWithLang: 5
+        readonly property int idStartWithNum: 6
         //    readonly property int idOtherDict1: 2
     }
 
@@ -46,10 +47,13 @@ Item {
         case dictSourceEnum.idDummyNote:
             parsedNote = own.dummyNotesParser(notes, maxTranslate)
             break
-//TODO need to add other dictionary parser
         case dictSourceEnum.idStartWithLang:
             parsedNote = own.langNotesParser(notes, maxTranslate)
             break
+        case dictSourceEnum.idStartWithNum:
+            parsedNote = own.numNotesParser(notes, maxTranslate)
+            break
+//TODO need to add other dictionary parser
         default:
             console.warn("Default parser is being used!!! Please try to all parsers for all dictionaries")
             parsedNote = own.defaultParser(notes, maxTranslate)
@@ -73,6 +77,8 @@ Item {
                 return dictSourceEnum.idAnkiGre7000
             } else if(notes.indexOf("[中]") != -1 || notes.indexOf("[EN]") != -1) {
                 return dictSourceEnum.idStartWithLang
+            } else if(notes.startsWith("1")) {
+                return dictSourceEnum.idStartWithNum
             }
 
             console.warn("Please add handler for new dictionary")
@@ -155,6 +161,34 @@ Item {
                         nl = nl.slice(4)
                     }
                     parsedNotes += updateNote(nl)
+                    lineStart = lineEnd + 1
+                }else{
+                    if(lineStart < notes.length) {
+                        var nl = notes.slice(lineStart )
+                        parsedNotes += updateNote(nl)
+                    }
+                    return parsedNotes
+                }
+                count++
+            }
+            return parsedNotes
+        }
+
+        function numNotesParser(notes, maxTranslate) {
+            var parsedNotes = ""
+            var lineStart = 0, lineEnd = 0
+            var count = 1
+            while(count <= maxTranslate){
+                lineEnd = notes.indexOf("\n", lineStart)
+                if(lineEnd != -1){
+                    if(lineStart == lineEnd){lineStart = lineEnd + 1; continue;} //Skip empty line
+                    var nl = notes.slice(lineStart , lineEnd+1)
+                    var num = parseInt(nl.slice(0,1))
+                    if (isNaN(num) != true) {
+                        var dot = nl.indexOf(".")
+                        nl = nl.slice(dot+1)
+                        parsedNotes += updateNote(nl)
+                    }
                     lineStart = lineEnd + 1
                 }else{
                     if(lineStart < notes.length) {
