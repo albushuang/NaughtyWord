@@ -81,7 +81,7 @@ Item { id: controller
     Rectangle {
         width: 50; height: 50
         visible: UserSettings.directLink
-        color: UserSettings.notesOnly ? "green": "red"
+        color: UserSettings.notesOnly ? "green": "grey"
         anchors { right: view.right; top: view.top }
         Text { text: "Notes\nOnly"; anchors.centerIn: parent }
         MouseArea { anchors.fill: parent
@@ -102,6 +102,14 @@ Item { id: controller
         onYMoved: { view.moveDetail(py-y); dy = y-py; py=y }
         onMreleased: {
             if (Math.abs(dy)>15) { view.scrollDetail(dy*4) }
+        }
+    }
+
+    Keys.onPressed: {
+        if (event.key == Qt.Key_J || event.key == Qt.Key_Left) {
+            own.clickedOnLeftBtn()
+        } else if (event.key == Qt.Key_L || event.key == Qt.Key_Right) {
+            own.clickedOnRightBtn()
         }
     }
 

@@ -17,7 +17,7 @@ Rectangle {
         for (var i=0;i<limited.length;i++) {
             if(dm.getDeckID()==limited[i]) {
                 //var stage = StageInfo.stageInfo[toeicBattleSettingOrg.highestAvailableStage]
-                var stage; stage[rangeEnd] = 99999
+                var stage = {}; stage.rangeEnd = 99999
                 if (stage.rangeEnd>=order) { return true }
                 else { return false }
             }
@@ -28,7 +28,7 @@ Rectangle {
         for (var i=0;i<limited.length;i++) {
             if(dm.getDeckID()==limited[i]) {
                 //var stage = StageInfo.stageInfo[toeicBattleSettingOrg.highestAvailableStage]
-                var stage; stage[rangeEnd] = 99999
+                var stage = {}; stage.rangeEnd = 99999
                 return stage.rangeEnd
             }
         }

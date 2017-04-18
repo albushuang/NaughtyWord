@@ -175,7 +175,7 @@ ios {
 }
 
 macx {
-# if any library is not found, execute:
+# if any library is not found, execute "otool -L" to check and to change a library:
 #    install_name_tool -change libmp3PlayerMacxRelease.1.dylib "@loader_path/libmp3PlayerMacxRelease.1.dylib" NaughtyWord
     QMAKE_MAC_SDK = macosx10.12
     rccfiles.files = $$PWD/rcc/decks.rcc $$PWD/rcc/musics.rcc $$PWD/rcc/dictionaries.rcc $$PWD/rcc/pic.rcc

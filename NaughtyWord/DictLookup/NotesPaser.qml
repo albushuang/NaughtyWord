@@ -13,6 +13,7 @@ Item {
         readonly property int idDummyNote: 4
         readonly property int idStartWithLang: 5
         readonly property int idStartWithNum: 6
+        readonly property int idStartWithTypeNum: 7
         //    readonly property int idOtherDict1: 2
     }
 
@@ -53,7 +54,10 @@ Item {
         case dictSourceEnum.idStartWithNum:
             parsedNote = own.numNotesParser(notes, maxTranslate)
             break
-//TODO need to add other dictionary parser
+        case dictSourceEnum.idStartWithTypeNum:
+            parsedNote = own.typeNumNotesParser(notes, maxTranslate)
+            break
+            //TODO need to add other dictionary parser
         default:
             console.warn("Default parser is being used!!! Please try to all parsers for all dictionaries")
             parsedNote = own.defaultParser(notes, maxTranslate)
@@ -67,6 +71,11 @@ Item {
     QtObject{id: own
         function detectDictSource(notes){
 //            console.log("notes:", notes)
+
+            if(startWithTypeNumber(notes)) {
+                return dictSourceEnum.idStartWithTypeNum
+            }
+
             if(startWithType(notes)) {
                 return dictSourceEnum.idStartWithType
             }
@@ -82,6 +91,22 @@ Item {
             }
 
             console.warn("Please add handler for new dictionary")
+        }
+
+        function startWithTypeNumber(notes) {
+            while(notes[0]=="\n" || notes[0]==" ") notes = notes.substr(1)
+            var check = notes.substr(0, 5).toUpperCase()
+            if (check.indexOf("N.")!=-1 ||
+                check.indexOf("V.")!=-1 ||
+                check.indexOf("VT.")!=-1 ||
+                check.indexOf("VI.")!=-1) { return true }
+            if (check.indexOf("A.")!=-1  ||
+                check.indexOf("AD.")!=-1  ||
+                check.indexOf("CONJ.")!=-1 ||
+                check.indexOf("INT.")!=-1) { return true }
+            if (check.indexOf("PRON.")!=-1 ||
+                check.indexOf("PREP.")!=-1) { return true }
+            else { return false }
         }
 
         function startWithType(notes) {
@@ -161,6 +186,38 @@ Item {
                         nl = nl.slice(4)
                     }
                     parsedNotes += updateNote(nl)
+                    lineStart = lineEnd + 1
+                }else{
+                    if(lineStart < notes.length) {
+                        var nl = notes.slice(lineStart )
+                        parsedNotes += updateNote(nl)
+                    }
+                    return parsedNotes
+                }
+                count++
+            }
+            return parsedNotes
+        }
+
+        function typeNumNotesParser(notes, maxTranslate) {
+            var parsedNotes = ""
+            var lineStart = 0, lineEnd = 0
+            var count = 1
+            var type = ""
+            while(count <= maxTranslate){
+                lineEnd = notes.indexOf("\n", lineStart)
+                if(lineEnd != -1){
+                    if(lineStart == lineEnd){lineStart = lineEnd + 1; continue;} //Skip empty line
+                    var nl = notes.slice(lineStart , lineEnd+1)
+                    var num = parseInt(nl.slice(0,1))
+                    if (startWithTypeNumber(nl)) {
+                        var dotInd = nl.indexOf(".")
+                        type = "[" + nl.slice(0, dotInd) + "]"
+                    } else if (isNaN(num) != true) {
+                        var dot = nl.indexOf(".")
+                        nl = nl.slice(dot+1)
+                        parsedNotes += updateNote(type+nl)
+                    }
                     lineStart = lineEnd + 1
                 }else{
                     if(lineStart < notes.length) {
